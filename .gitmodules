@@ -1,0 +1,4 @@
+[submodule "supplybox/ERIG_Kicad_Libs"]
+	path = supplybox/ERIG_Kicad_Libs
+	url = mkalte@mkalte.me:git/ERIG_Kicad_Libs.git
+	branch = master
