@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ERIG_Converter_DCDC)(type Legacy)(uri ${KIPRJMOD}/ERIG_Kicad_Libs/Libraries/ERIG_Converter_DCDC.lib)(options "")(descr ""))
+  (lib (name ERIG_Relay)(type Legacy)(uri ${KIPRJMOD}/ERIG_Kicad_Libs/Libraries/ERIG_Relay.lib)(options "")(descr ""))
+  (lib (name ERIG_Transformer)(type Legacy)(uri ${KIPRJMOD}/ERIG_Kicad_Libs/Libraries/ERIG_Transformer.lib)(options "")(descr ""))
+)

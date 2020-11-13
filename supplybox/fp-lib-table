@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name ERIG_Converter_DCDC)(type KiCad)(uri ${KIPRJMOD}/ERIG_Kicad_Libs/Footprints/ERIG_Converter_DCDC.pretty)(options "")(descr ""))
+  (lib (name ERIG_Diode)(type KiCad)(uri ${KIPRJMOD}/ERIG_Kicad_Libs/Footprints/ERIG_Diode.pretty)(options "")(descr ""))
+  (lib (name ERIG_Relay)(type KiCad)(uri ${KIPRJMOD}/ERIG_Kicad_Libs/Footprints/ERIG_Relay.pretty)(options "")(descr ""))
+  (lib (name ERIG_Transformer)(type KiCad)(uri ${KIPRJMOD}/ERIG_Kicad_Libs/Footprints/ERIG_Transformer.pretty)(options "")(descr ""))
+  (lib (name ERIG_Fuse)(type KiCad)(uri ${KIPRJMOD}/ERIG_Kicad_Libs/Footprints/ERIG_Fuse.pretty)(options "")(descr ""))
+)
