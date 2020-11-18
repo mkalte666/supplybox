@@ -35,42 +35,14 @@ F 3 "" H 2000 1600 50  0001 C CNN
 	1    2000 1600
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:Fuse F1
-U 1 1 5FA01A05
-P 2600 1350
-F 0 "F1" V 2797 1350 50  0000 C CNN
-F 1 "100mA" V 2706 1350 50  0000 C CNN
-F 2 "ERIG_Fuse:RST_XXX" V 2530 1350 50  0001 C CNN
-F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-rst-series.pdf" H 2600 1350 50  0001 C CNN
-F 4 "507-1166-ND" H 2600 1350 50  0001 C CNN "digikey"
-	1    2600 1350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2000 1600 2000 1550
 Wire Wire Line
 	2000 1300 2000 1350
 Wire Wire Line
 	2750 1350 3100 1350
-Wire Wire Line
-	2750 1550 3100 1550
-$Comp
-L Device:Fuse F2
-U 1 1 5FA072BB
-P 2600 1550
-F 0 "F2" V 2800 1550 50  0000 C CNN
-F 1 "100mA" V 2700 1550 50  0000 C CNN
-F 2 "ERIG_Fuse:RST_XXX" V 2530 1550 50  0001 C CNN
-F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-rst-series.pdf" H 2600 1550 50  0001 C CNN
-F 4 "507-1166-ND" H 2600 1550 50  0001 C CNN "digikey"
-	1    2600 1550
-	0    1    1    0   
-$EndComp
 Text Label 2750 1350 0    50   ~ 0
 L_Fused
-Text Label 2750 1550 0    50   ~ 0
-N_Fused
 $Comp
 L Device:D_Bridge_+AA- D1
 U 1 1 5FA0B0E8
@@ -118,8 +90,6 @@ Wire Wire Line
 Connection ~ 2000 1350
 Wire Wire Line
 	2000 1350 1800 1350
-Wire Wire Line
-	2450 1550 2000 1550
 Connection ~ 2000 1550
 Wire Wire Line
 	2000 1550 1800 1550
@@ -153,7 +123,7 @@ U 1 1 5FA2D790
 P 8000 1600
 F 0 "D3" H 8088 1646 50  0000 L CNN
 F 1 "Q_SCR_AGK" H 8088 1555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92" V 8000 1600 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" V 8000 1600 50  0001 C CNN
 F 3 "http://www.ween-semi.com/sites/default/files/2018-10/bt169d-l.pdf" V 8000 1600 50  0001 C CNN
 F 4 "1740-1089-1-ND" H 8000 1600 50  0001 C CNN "digikey"
 	1    8000 1600
@@ -165,7 +135,7 @@ U 1 1 5FA2EC3B
 P 7300 1950
 F 0 "R1" H 7370 1996 50  0000 L CNN
 F 1 "1K" H 7370 1905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7230 1950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7230 1950 50  0001 C CNN
 F 3 "~" H 7300 1950 50  0001 C CNN
 F 4 " RHM1.0KDCT-ND " H 7300 1950 50  0001 C CNN "digikey"
 	1    7300 1950
@@ -177,7 +147,7 @@ U 1 1 5FA2FF79
 P 7650 1950
 F 0 "C3" H 7765 1996 50  0000 L CNN
 F 1 "47nF" H 7765 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7688 1800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7688 1800 50  0001 C CNN
 F 3 "http://www.passivecomponent.com/wp-content/uploads/2018/10/MLCC.pdf" H 7650 1950 50  0001 C CNN
 F 4 "1292-1446-1-ND" H 7650 1950 50  0001 C CNN "digikey"
 	1    7650 1950
@@ -279,7 +249,7 @@ U 1 1 5FA21E0D
 P 6550 1700
 F 0 "C2" H 6665 1746 50  0000 L CNN
 F 1 "100nF" H 6665 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6588 1550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6588 1550 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL21B104KACNNNC_Spec.pdf" H 6550 1700 50  0001 C CNN
 F 4 "1276-1099-1-ND" H 6550 1700 50  0001 C CNN "digikey"
 	1    6550 1700
@@ -336,7 +306,7 @@ U 1 1 5FA7176B
 P 1400 3900
 F 0 "C5" V 1250 3900 50  0000 C CNN
 F 1 "470pF" V 1150 3900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1438 3750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1438 3750 50  0001 C CNN
 F 3 "http://www.passivecomponent.com/wp-content/uploads/2018/10/MLCC.pdf" H 1400 3900 50  0001 C CNN
 F 4 "1292-1530-1-ND" V 1400 3900 50  0001 C CNN "digikey"
 	1    1400 3900
@@ -364,13 +334,13 @@ Wire Wire Line
 $Comp
 L Diode:1N5819 D4
 U 1 1 5FA77EE4
-P 3050 4150
-F 0 "D4" V 3004 4230 50  0000 L CNN
-F 1 "1N5819" V 3095 4230 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3050 3975 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 3050 4150 50  0001 C CNN
-F 4 " 497-7053-1-ND " V 3050 4150 50  0001 C CNN "digikey"
-	1    3050 4150
+P 3050 4300
+F 0 "D4" V 3004 4380 50  0000 L CNN
+F 1 "1N5819" V 3095 4380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 3050 4125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 3050 4300 50  0001 C CNN
+F 4 "NTS245SFT1GOSCT-ND" V 3050 4300 50  0001 C CNN "digikey"
+	1    3050 4300
 	0    1    1    0   
 $EndComp
 $Comp
@@ -385,63 +355,53 @@ F 3 "" H 2000 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 4000 4250 4000
+	4100 3900 4250 3900
 $Comp
 L Device:CP C6
 U 1 1 5FA82968
-P 3650 4150
-F 0 "C6" H 3768 4196 50  0000 L CNN
-F 1 "470uF" H 3768 4105 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 3688 4000 50  0001 C CNN
-F 3 "https://content.kemet.com/datasheets/KEM_A4005_ESH.pdf" H 3650 4150 50  0001 C CNN
-F 4 "399-15679-ND" H 3650 4150 50  0001 C CNN "digikey"
-	1    3650 4150
+P 3650 4300
+F 0 "C6" H 3768 4346 50  0000 L CNN
+F 1 "470uF" H 3768 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 3688 4150 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_A4005_ESH.pdf" H 3650 4300 50  0001 C CNN
+F 4 "PCE3805CT-ND" H 3650 4300 50  0001 C CNN "digikey"
+	1    3650 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 4000 3800 4000
+	3650 3900 3800 3900
 Wire Wire Line
-	3650 4300 3950 4300
+	3650 4450 3950 4450
 $Comp
 L power:GND #PWR0104
 U 1 1 5FA85EB1
-P 3950 4300
-F 0 "#PWR0104" H 3950 4050 50  0001 C CNN
-F 1 "GND" H 3955 4127 50  0000 C CNN
-F 2 "" H 3950 4300 50  0001 C CNN
-F 3 "" H 3950 4300 50  0001 C CNN
-	1    3950 4300
+P 3950 4450
+F 0 "#PWR0104" H 3950 4200 50  0001 C CNN
+F 1 "GND" H 3955 4277 50  0000 C CNN
+F 2 "" H 3950 4450 50  0001 C CNN
+F 3 "" H 3950 4450 50  0001 C CNN
+	1    3950 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 4300 4250 4300
+	3950 4450 4250 4450
 Wire Wire Line
-	3050 4000 3200 4000
+	3500 3900 3650 3900
 Wire Wire Line
-	3500 4000 3650 4000
-Connection ~ 3650 4000
-Wire Wire Line
-	3650 4300 3050 4300
-Connection ~ 3650 4300
-Wire Wire Line
-	3050 4000 3050 3900
-Wire Wire Line
-	3050 3900 2900 3900
-Connection ~ 3050 4000
+	3650 4450 3050 4450
+Connection ~ 3650 4450
 $Comp
 L Device:R R4
 U 1 1 5FAA8D90
 P 2700 4000
 F 0 "R4" V 2907 4000 50  0000 C CNN
 F 1 "3900" V 2816 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2630 4000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2630 4000 50  0001 C CNN
 F 3 "~" H 2700 4000 50  0001 C CNN
 F 4 "RR08P3.9KDCT-ND" V 2700 4000 50  0001 C CNN "digikey"
 	1    2700 4000
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2850 4000 3050 4000
 Wire Wire Line
 	2550 4000 2500 4000
 $Comp
@@ -450,7 +410,7 @@ U 1 1 5FAADA89
 P 2500 4150
 F 0 "R3" H 2570 4196 50  0000 L CNN
 F 1 "1200" H 2570 4105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2430 4150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2430 4150 50  0001 C CNN
 F 3 "~" H 2500 4150 50  0001 C CNN
 F 4 " RR08P1.2KDCT-ND " H 2500 4150 50  0001 C CNN "digikey"
 	1    2500 4150
@@ -473,18 +433,15 @@ F 4 "TC33X-2-201ECT-ND" V 2500 4450 50  0001 C CNN "digikey"
 $EndComp
 Wire Wire Line
 	2650 4450 3050 4450
-Wire Wire Line
-	3050 4450 3050 4300
-Connection ~ 3050 4300
 $Comp
 L Device:CP C4
 U 1 1 5FAB283E
 P 1000 3700
 F 0 "C4" H 1118 3746 50  0000 L CNN
 F 1 "100uF" H 1118 3655 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1038 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x7.7" H 1038 3550 50  0001 C CNN
 F 3 "https://www.we-online.de/katalog/datasheet/860010473007.pdf" H 1000 3700 50  0001 C CNN
-F 4 "732-8630-1-ND" H 1000 3700 50  0001 C CNN "digikey"
+F 4 "PCE3797CT-ND" H 1000 3700 50  0001 C CNN "digikey"
 	1    1000 3700
 	1    0    0    -1  
 $EndComp
@@ -504,9 +461,9 @@ U 1 1 5FABB002
 P 2500 3350
 F 0 "R2" H 2430 3304 50  0000 R CNN
 F 1 "0.3 Ohm" H 2430 3395 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2430 3350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2430 3350 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RL_Group_521_RoHS_L_2.pdf" H 2500 3350 50  0001 C CNN
-F 4 "YAG1861CT-ND" H 2500 3350 50  0001 C CNN "digikey"
+F 4 "RL12S.30FDKR-ND‎" H 2500 3350 50  0001 C CNN "digikey"
 	1    2500 3350
 	-1   0    0    1   
 $EndComp
@@ -526,54 +483,42 @@ Wire Wire Line
 Wire Wire Line
 	1350 3150 1350 3500
 $Comp
-L Device:L_Core_Ferrite L1
-U 1 1 5FAD9F62
-P 3350 4000
-F 0 "L1" V 3575 4000 50  0000 C CNN
-F 1 "220 uH" V 3484 4000 50  0000 C CNN
-F 2 "Inductor_THT:L_Radial_D9.5mm_P5.00mm_Fastron_07HVP" H 3350 4000 50  0001 C CNN
-F 3 "https://www.bourns.com/docs/Product-Datasheets/RLB9012.pdf" H 3350 4000 50  0001 C CNN
-F 4 "RLB9012-221KL-ND" V 3350 4000 50  0001 C CNN "digikey"
-	1    3350 4000
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:L_Core_Ferrite L2
 U 1 1 5FAE0228
-P 3950 4000
-F 0 "L2" V 4175 4000 50  0000 C CNN
-F 1 "1uH" V 4084 4000 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3950 4000 50  0001 C CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_decoupling_mlz2012_en.pdf" H 3950 4000 50  0001 C CNN
-F 4 "445-6756-1-ND" V 3950 4000 50  0001 C CNN "digikey"
-	1    3950 4000
+P 3950 3900
+F 0 "L2" V 4175 3900 50  0000 C CNN
+F 1 "1uH" V 4084 3900 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3950 3900 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_decoupling_mlz2012_en.pdf" H 3950 3900 50  0001 C CNN
+F 4 "445-6756-1-ND" V 3950 3900 50  0001 C CNN "digikey"
+	1    3950 3900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR05
 U 1 1 5FA8147B
-P 4250 4000
-F 0 "#PWR05" H 4250 3850 50  0001 C CNN
-F 1 "+5V" H 4265 4173 50  0000 C CNN
-F 2 "" H 4250 4000 50  0001 C CNN
-F 3 "" H 4250 4000 50  0001 C CNN
-	1    4250 4000
+P 4250 3900
+F 0 "#PWR05" H 4250 3750 50  0001 C CNN
+F 1 "+5V" H 4265 4073 50  0000 C CNN
+F 2 "" H 4250 3900 50  0001 C CNN
+F 3 "" H 4250 3900 50  0001 C CNN
+	1    4250 3900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP C7
 U 1 1 5FAAC555
-P 4250 4150
-F 0 "C7" H 4368 4196 50  0000 L CNN
-F 1 "100uF" H 4368 4105 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4288 4000 50  0001 C CNN
-F 3 "https://www.we-online.de/katalog/datasheet/860010473007.pdf" H 4250 4150 50  0001 C CNN
-F 4 "732-8630-1-ND" H 4250 4150 50  0001 C CNN "digikey"
-	1    4250 4150
+P 4250 4300
+F 0 "C7" H 4368 4346 50  0000 L CNN
+F 1 "100uF" H 4368 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x7.7" H 4288 4150 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/860010473007.pdf" H 4250 4300 50  0001 C CNN
+F 4 "PCE3797CT-ND" H 4250 4300 50  0001 C CNN "digikey"
+	1    4250 4300
 	1    0    0    -1  
 $EndComp
-Connection ~ 3950 4300
-Connection ~ 4250 4000
+Connection ~ 3950 4450
+Connection ~ 4250 3900
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5FAB4150
@@ -632,27 +577,27 @@ F 3 "~" H 2700 4000 50  0001 C CNN
 	1    2500 4000
 	1    0    0    -1  
 $EndComp
-Connection ~ 4250 4300
+Connection ~ 4250 4450
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 5FAD11A9
-P 5300 4000
-F 0 "H3" V 5300 4200 50  0000 C CNN
-F 1 "MountingHole_Pad" V 5150 4200 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5300 4000 50  0001 C CNN
-F 3 "~" H 5300 4000 50  0001 C CNN
-	1    5300 4000
+P 5300 3900
+F 0 "H3" V 5300 4100 50  0000 C CNN
+F 1 "MountingHole_Pad" V 5150 4100 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5300 3900 50  0001 C CNN
+F 3 "~" H 5300 3900 50  0001 C CNN
+	1    5300 3900
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 5FAD11AF
-P 5300 4300
-F 0 "H4" V 5300 4500 50  0000 C CNN
-F 1 "MountingHole_Pad" V 5450 4500 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5300 4300 50  0001 C CNN
-F 3 "~" H 5300 4300 50  0001 C CNN
-	1    5300 4300
+P 5300 4450
+F 0 "H4" V 5300 4650 50  0000 C CNN
+F 1 "MountingHole_Pad" V 5450 4650 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5300 4450 50  0001 C CNN
+F 3 "~" H 5300 4450 50  0001 C CNN
+	1    5300 4450
 	0    1    1    0   
 $EndComp
 $Comp
@@ -683,10 +628,10 @@ L Device:C C9
 U 1 1 5FB3A0E4
 P 1400 5950
 F 0 "C9" V 1250 5950 50  0000 C CNN
-F 1 "470pF" V 1150 5950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1438 5800 50  0001 C CNN
+F 1 "360pF" V 1150 5950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1438 5800 50  0001 C CNN
 F 3 "http://www.passivecomponent.com/wp-content/uploads/2018/10/MLCC.pdf" H 1400 5950 50  0001 C CNN
-F 4 "1292-1530-1-ND" V 1400 5950 50  0001 C CNN "digikey"
+F 4 "478-10353-1-ND" V 1400 5950 50  0001 C CNN "digikey"
 	1    1400 5950
 	0    -1   -1   0   
 $EndComp
@@ -710,18 +655,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 5750 2400 5750
 $Comp
-L Diode:1N5819 D5
-U 1 1 5FB3A0F4
-P 3050 6200
-F 0 "D5" V 3004 6280 50  0000 L CNN
-F 1 "1N5819" V 3095 6280 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3050 6025 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 3050 6200 50  0001 C CNN
-F 4 " 497-7053-1-ND " V 3050 6200 50  0001 C CNN "digikey"
-	1    3050 6200
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR08
 U 1 1 5FB3A0FA
 P 2000 6250
@@ -733,63 +666,42 @@ F 3 "" H 2000 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 6050 4250 6050
+	4200 5950 4350 5950
 $Comp
 L Device:CP C10
 U 1 1 5FB3A102
-P 3650 6200
-F 0 "C10" H 3768 6246 50  0000 L CNN
-F 1 "470uF" H 3768 6155 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 3688 6050 50  0001 C CNN
-F 3 "https://content.kemet.com/datasheets/KEM_A4005_ESH.pdf" H 3650 6200 50  0001 C CNN
-F 4 "399-15679-ND" H 3650 6200 50  0001 C CNN "digikey"
-	1    3650 6200
+P 3750 6300
+F 0 "C10" H 3868 6346 50  0000 L CNN
+F 1 "470uF" H 3868 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 3788 6150 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_A4005_ESH.pdf" H 3750 6300 50  0001 C CNN
+F 4 "PCE3805CT-ND" H 3750 6300 50  0001 C CNN "digikey"
+	1    3750 6300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 6050 3800 6050
-Wire Wire Line
-	3650 6350 3950 6350
 $Comp
 L power:GND #PWR09
 U 1 1 5FB3A10A
-P 3950 6350
-F 0 "#PWR09" H 3950 6100 50  0001 C CNN
-F 1 "GND" H 3955 6177 50  0000 C CNN
-F 2 "" H 3950 6350 50  0001 C CNN
-F 3 "" H 3950 6350 50  0001 C CNN
-	1    3950 6350
+P 4000 6500
+F 0 "#PWR09" H 4000 6250 50  0001 C CNN
+F 1 "GND" H 4005 6327 50  0000 C CNN
+F 2 "" H 4000 6500 50  0001 C CNN
+F 3 "" H 4000 6500 50  0001 C CNN
+	1    4000 6500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3950 6350 4250 6350
-Wire Wire Line
-	3050 6050 3200 6050
-Wire Wire Line
-	3500 6050 3650 6050
-Connection ~ 3650 6050
-Wire Wire Line
-	3650 6350 3050 6350
-Connection ~ 3650 6350
-Wire Wire Line
-	3050 6050 3050 5950
-Wire Wire Line
-	3050 5950 2900 5950
-Connection ~ 3050 6050
 $Comp
 L Device:R R7
 U 1 1 5FB3A119
 P 2700 6050
 F 0 "R7" V 2907 6050 50  0000 C CNN
 F 1 "3900" V 2816 6050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2630 6050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2630 6050 50  0001 C CNN
 F 3 "~" H 2700 6050 50  0001 C CNN
 F 4 " RR08P1.2KDCT-ND " V 2700 6050 50  0001 C CNN "digikey"
 	1    2700 6050
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2850 6050 3050 6050
 Wire Wire Line
 	2550 6050 2500 6050
 $Comp
@@ -798,7 +710,7 @@ U 1 1 5FB3A121
 P 2500 6200
 F 0 "R6" H 2570 6246 50  0000 L CNN
 F 1 "2200" H 2570 6155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2430 6200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2430 6200 50  0001 C CNN
 F 3 "~" H 2500 6200 50  0001 C CNN
 F 4 "RR0816P-222-D " H 2500 6200 50  0001 C CNN "digikey"
 	1    2500 6200
@@ -819,20 +731,15 @@ F 4 "TC33X-2-201ECT-ND" V 2500 6500 50  0001 C CNN "digikey"
 	1    2500 6500
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2650 6500 3050 6500
-Wire Wire Line
-	3050 6500 3050 6350
-Connection ~ 3050 6350
 $Comp
 L Device:CP C8
 U 1 1 5FB3A134
 P 1000 5750
 F 0 "C8" H 1118 5796 50  0000 L CNN
 F 1 "100uF" H 1118 5705 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1038 5600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x7.7" H 1038 5600 50  0001 C CNN
 F 3 "https://www.we-online.de/katalog/datasheet/860010473007.pdf" H 1000 5750 50  0001 C CNN
-F 4 "732-8630-1-ND" H 1000 5750 50  0001 C CNN "digikey"
+F 4 "PCE3797CT-ND" H 1000 5750 50  0001 C CNN "digikey"
 	1    1000 5750
 	1    0    0    -1  
 $EndComp
@@ -861,43 +768,31 @@ Wire Wire Line
 Wire Wire Line
 	1350 5200 1350 5550
 $Comp
-L Device:L_Core_Ferrite L3
-U 1 1 5FB3A151
-P 3350 6050
-F 0 "L3" V 3575 6050 50  0000 C CNN
-F 1 "220 uH" V 3484 6050 50  0000 C CNN
-F 2 "Inductor_THT:L_Radial_D9.5mm_P5.00mm_Fastron_07HVP" H 3350 6050 50  0001 C CNN
-F 3 "https://www.bourns.com/docs/Product-Datasheets/RLB9012.pdf" H 3350 6050 50  0001 C CNN
-F 4 "RLB9012-221KL-ND" V 3350 6050 50  0001 C CNN "digikey"
-	1    3350 6050
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:L_Core_Ferrite L4
 U 1 1 5FB3A158
-P 3950 6050
-F 0 "L4" V 4175 6050 50  0000 C CNN
-F 1 "1uH" V 4084 6050 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3950 6050 50  0001 C CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_decoupling_mlz2012_en.pdf" H 3950 6050 50  0001 C CNN
-F 4 "445-6756-1-ND" V 3950 6050 50  0001 C CNN "digikey"
-	1    3950 6050
+P 4050 5950
+F 0 "L4" V 4275 5950 50  0000 C CNN
+F 1 "1uH" V 4184 5950 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4050 5950 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_decoupling_mlz2012_en.pdf" H 4050 5950 50  0001 C CNN
+F 4 "445-6756-1-ND" V 4050 5950 50  0001 C CNN "digikey"
+	1    4050 5950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:CP C11
 U 1 1 5FB3A165
-P 4250 6200
-F 0 "C11" H 4368 6246 50  0000 L CNN
-F 1 "100uF" H 4368 6155 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4288 6050 50  0001 C CNN
-F 3 "https://www.we-online.de/katalog/datasheet/860010473007.pdf" H 4250 6200 50  0001 C CNN
-F 4 "732-8630-1-ND" H 4250 6200 50  0001 C CNN "digikey"
-	1    4250 6200
+P 4350 6300
+F 0 "C11" H 4468 6346 50  0000 L CNN
+F 1 "100uF" H 4468 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x7.7" H 4388 6150 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/860010473007.pdf" H 4350 6300 50  0001 C CNN
+F 4 "PCE3797CT-ND" H 4350 6300 50  0001 C CNN "digikey"
+	1    4350 6300
 	1    0    0    -1  
 $EndComp
-Connection ~ 3950 6350
-Connection ~ 4250 6050
+Connection ~ 4000 6500
+Connection ~ 4350 5950
 $Comp
 L Connector:TestPoint TP10
 U 1 1 5FB3A16D
@@ -909,7 +804,6 @@ F 3 "~" H 3100 5950 50  0001 C CNN
 	1    2900 5950
 	1    0    0    -1  
 $EndComp
-Connection ~ 2900 5950
 Wire Wire Line
 	2900 5950 2400 5950
 $Comp
@@ -923,38 +817,37 @@ F 3 "~" H 2700 6050 50  0001 C CNN
 	1    2500 6050
 	1    0    0    -1  
 $EndComp
-Connection ~ 4250 6350
 $Comp
 L Mechanical:MountingHole_Pad H5
 U 1 1 5FB3A18A
-P 5300 6050
-F 0 "H5" V 5300 6250 50  0000 C CNN
-F 1 "MountingHole_Pad" V 5150 6250 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5300 6050 50  0001 C CNN
-F 3 "~" H 5300 6050 50  0001 C CNN
-	1    5300 6050
+P 5400 5950
+F 0 "H5" V 5400 6150 50  0000 C CNN
+F 1 "MountingHole_Pad" V 5250 6150 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5400 5950 50  0001 C CNN
+F 3 "~" H 5400 5950 50  0001 C CNN
+	1    5400 5950
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H6
 U 1 1 5FB3A190
-P 5300 6350
-F 0 "H6" V 5300 6550 50  0000 C CNN
-F 1 "MountingHole_Pad" V 5450 6550 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5300 6350 50  0001 C CNN
-F 3 "~" H 5300 6350 50  0001 C CNN
-	1    5300 6350
+P 5350 6500
+F 0 "H6" V 5350 6700 50  0000 C CNN
+F 1 "MountingHole_Pad" V 5500 6700 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5350 6500 50  0001 C CNN
+F 3 "~" H 5350 6500 50  0001 C CNN
+	1    5350 6500
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+3.3V #PWR010
 U 1 1 5FB4274E
-P 4250 6050
-F 0 "#PWR010" H 4250 5900 50  0001 C CNN
-F 1 "+3.3V" H 4265 6223 50  0000 C CNN
-F 2 "" H 4250 6050 50  0001 C CNN
-F 3 "" H 4250 6050 50  0001 C CNN
-	1    4250 6050
+P 4350 5950
+F 0 "#PWR010" H 4350 5800 50  0001 C CNN
+F 1 "+3.3V" H 4365 6123 50  0000 C CNN
+F 2 "" H 4350 5950 50  0001 C CNN
+F 3 "" H 4350 5950 50  0001 C CNN
+	1    4350 5950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -963,9 +856,9 @@ U 1 1 5FB474C6
 P 2500 5400
 F 0 "R5" H 2430 5354 50  0000 R CNN
 F 1 "0.3 Ohm" H 2430 5445 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2430 5400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2430 5400 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RL_Group_521_RoHS_L_2.pdf" H 2500 5400 50  0001 C CNN
-F 4 "YAG1861CT-ND" H 2500 5400 50  0001 C CNN "digikey"
+F 4 "RL12S.30FDKR-ND‎" H 2500 5400 50  0001 C CNN "digikey"
 	1    2500 5400
 	-1   0    0    1   
 $EndComp
@@ -1004,13 +897,11 @@ F 3 "~" H 8100 2200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4250 6050 5200 6050
+	4350 5950 5300 5950
 Wire Wire Line
-	4250 6350 5200 6350
+	4250 4450 5200 4450
 Wire Wire Line
-	4250 4300 5200 4300
-Wire Wire Line
-	4250 4000 5200 4000
+	4250 3900 5200 3900
 $Comp
 L Device:Thermistor_NTC TH1
 U 1 1 5FA9437D
@@ -1052,4 +943,127 @@ Connection ~ 4300 1650
 Wire Wire Line
 	4400 1700 4400 1500
 Connection ~ 4400 1700
+$Comp
+L Device:Fuse F1
+U 1 1 5FA01A05
+P 2600 1350
+F 0 "F1" V 2797 1350 50  0000 C CNN
+F 1 "2.5A" V 2706 1350 50  0000 C CNN
+F 2 "ERIG_Fuse:RST_XXX" V 2530 1350 50  0001 C CNN
+F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-rst-series.pdf" H 2600 1350 50  0001 C CNN
+F 4 "507-2365-1-ND" H 2600 1350 50  0001 C CNN "digikey"
+	1    2600 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2450 1550 2000 1550
+Wire Wire Line
+	2750 1550 3100 1550
+Text Label 2750 1550 0    50   ~ 0
+N_Fused
+$Comp
+L Device:Fuse F2
+U 1 1 5FA072BB
+P 2600 1550
+F 0 "F2" V 2800 1550 50  0000 C CNN
+F 1 "2.5A" V 2700 1550 50  0000 C CNN
+F 2 "ERIG_Fuse:RST_XXX" V 2530 1550 50  0001 C CNN
+F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-rst-series.pdf" H 2600 1550 50  0001 C CNN
+F 4 "507-2365-1-ND" H 2600 1550 50  0001 C CNN "digikey"
+	1    2600 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 3900 3650 4000
+Connection ~ 3650 4000
+Connection ~ 3050 4450
+Wire Wire Line
+	2900 3900 3050 3900
+Wire Wire Line
+	2850 4000 3650 4000
+Wire Wire Line
+	3050 3900 3050 4150
+Connection ~ 3050 3900
+Wire Wire Line
+	3050 3900 3200 3900
+Wire Wire Line
+	3650 4000 3650 4150
+Connection ~ 3650 3900
+Wire Wire Line
+	3100 6500 3750 6500
+Wire Wire Line
+	4000 6500 4350 6500
+$Comp
+L Diode:1N5819 D5
+U 1 1 5FB3A0F4
+P 3100 6350
+F 0 "D5" V 3054 6430 50  0000 L CNN
+F 1 "1N5819" V 3145 6430 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 3100 6175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 3100 6350 50  0001 C CNN
+F 4 "NTS245SFT1GOSCT-ND" V 3100 6350 50  0001 C CNN "digikey"
+	1    3100 6350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 6450 4350 6500
+Connection ~ 4350 6500
+Wire Wire Line
+	4350 6500 5250 6500
+Wire Wire Line
+	3750 6450 3750 6500
+Connection ~ 3750 6500
+Wire Wire Line
+	3750 6500 4000 6500
+Wire Wire Line
+	3750 5950 3900 5950
+Connection ~ 3100 5950
+Wire Wire Line
+	3100 5950 3200 5950
+Connection ~ 2900 5950
+Wire Wire Line
+	2900 5950 3100 5950
+Wire Wire Line
+	2650 6500 3100 6500
+Connection ~ 3100 6500
+Wire Wire Line
+	4350 6150 4350 5950
+Wire Wire Line
+	3100 5950 3100 6200
+Wire Wire Line
+	3750 6050 3750 5950
+Wire Wire Line
+	3750 6150 3750 6050
+Connection ~ 3750 6050
+Wire Wire Line
+	2850 6050 3750 6050
+Connection ~ 3750 5950
+Wire Wire Line
+	3750 5950 3500 5950
+$Comp
+L Device:L_Core_Ferrite L3
+U 1 1 5FB3A151
+P 3350 5950
+F 0 "L3" V 3575 5950 50  0000 C CNN
+F 1 "220 uH" V 3484 5950 50  0000 C CNN
+F 2 "Inductor_THT:L_Radial_D9.5mm_P5.00mm_Fastron_07HVP" H 3350 5950 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/RLB9012.pdf" H 3350 5950 50  0001 C CNN
+F 4 "RLB9012-221KL-ND" V 3350 5950 50  0001 C CNN "digikey"
+	1    3350 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite L1
+U 1 1 5FD4043C
+P 3350 3900
+F 0 "L1" V 3575 3900 50  0000 C CNN
+F 1 "220 uH" V 3484 3900 50  0000 C CNN
+F 2 "Inductor_THT:L_Radial_D9.5mm_P5.00mm_Fastron_07HVP" H 3350 3900 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/RLB9012.pdf" H 3350 3900 50  0001 C CNN
+F 4 "RLB9012-221KL-ND" V 3350 3900 50  0001 C CNN "digikey"
+	1    3350 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 3900 4250 4150
 $EndSCHEMATC
